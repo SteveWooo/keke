@@ -1,0 +1,1 @@
+<view class="test" data-test="test" bindtap="e_test">hi:{{name}}</view>

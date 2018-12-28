@@ -1,0 +1,7 @@
+/* pages/canvas/canvas.wxss */
+.canvas-view{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #111;
+}

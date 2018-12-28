@@ -1,0 +1,12 @@
+<!--pages/canvas/canvas.wxml-->
+<view>
+  <!-- <image id="test" src="https://upload.wikimedia.org/wikipedia/commons/d/df/Doge_homemade_meme.jpg"></image> -->
+  <view class="canvas-view">
+    <canvas style='border:1px solid #111' canvas-id="canvas"></canvas>
+  </view>
+  <view style='margin-top:20px'>
+    <input placeholder='文本' id="content"></input>
+    <button>add</button>
+  </view>
+  <view wx:key="spirit" wx:for="{{spirits}}" style=''>test:{{item.width}}</view>
+</view>
