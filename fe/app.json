@@ -1,8 +1,7 @@
 {
   "pages" : [
     "pages/canvas/canvas",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -17,8 +16,8 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "pagePath": "pages/canvas/canvas",
+        "text": "画布"
       }
     ]
   },
