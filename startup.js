@@ -3,7 +3,7 @@ const app = express();
 var fs = require('fs');
 var http = require('http');
 var https = require('https');
-var privateKey  = fs.readFileSync('/sslkeys/private.pem', 'utf8'),
+var privateKey  = fs.readFileSync('/sslkeys/private.pem', 'utf8');
 var certificate = fs.readFileSync('/sslkeys/file.crt', 'utf8');
 var credentials = {key: privateKey, cert: certificate};
 
