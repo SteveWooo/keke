@@ -4,7 +4,7 @@ Vue.component('blog', {
 	},
 	methods : {
 		init : function(){
-			console.log("init blog")
+			// console.log("init blog")
 		}
 	},
 	mounted : function(){

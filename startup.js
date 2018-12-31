@@ -9,15 +9,15 @@ var credentials = {key: privateKey, cert: certificate};
 
 var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
-var PORT = 80;
-var SSLPORT = 443;
+var PORT = 81;
+// var SSLPORT = 443;
 
 httpServer.listen(PORT, function() {
     console.log('HTTP Server is running on: http://localhost:%s', PORT);
 });
-httpsServer.listen(SSLPORT, function() {
-    console.log('HTTPS Server is running on: https://localhost:%s', SSLPORT);
-});
+// httpsServer.listen(SSLPORT, function() {
+//     console.log('HTTPS Server is running on: https://localhost:%s', SSLPORT);
+// });
 app.use("/public", express.static("public"));
 // Welcome
 app.get('/api', function(req, res) {

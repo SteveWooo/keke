@@ -8,7 +8,9 @@ Vue.component('blog-content', {
 		}
 	},
 	mounted : function(){
-		console.log(vue.global.blog.title = "test");
+		setTimeout(function(){
+			vue.global.blog.title = "test";
+		}, 1000);
 	},
 	template: 
 `<v-container grid-list-md text-xs-center>

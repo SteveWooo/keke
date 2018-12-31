@@ -9,7 +9,8 @@ var vue = new Vue({
 				create_time : new Date()
 			},
 			config : {
-				number : 1
+				number : 1,
+				index_page : "blog"
 			}
 		}
 	},
@@ -17,6 +18,10 @@ var vue = new Vue({
 		init : function(){
 			var that = this;
 			this.router = location.hash.substring(1);
+			if(this.router == ""){
+				this.router = this.global.config.index_page;
+				location.hash = this.global.config.index_page;
+			}
 			window.onhashchange = function(){
 				that.router = location.hash.substring(1);
 			}
